@@ -1,16 +1,22 @@
 <script>
-  import logo from './assets/svelte.png'
-  import Counter from './lib/Counter.svelte'
+  import logo from './assets/svelte.png';
+  import Counter from './lib/Counter.svelte';
+  import { MetaTags } from 'svelte-meta-tags';
 </script>
 
-<svelte:head>
-  <title>Svelte Learn</title>
-  <meta property="og:title" content="Svelte Learn" />
-  <meta property="og:site_name" content="Svelte Learn" />
-  <meta property="og:url" content="link-to-hosted-site.com" />
-  <meta property="og:description" content="Learning how to use Svelte" />
-  <meta property="og:image" content="https://res.cloudinary.com/dpkreativ/image/upload/v1657564635/sample_ctunnp.jpg" />
-</svelte:head>
+<MetaTags
+  title="Svelte Learn"
+  openGraph={{
+    url: 'link-to-hosted-site.com',
+    title: 'Svelte Learn',
+    description: 'Learning how to use Svelte',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/dpkreativ/image/upload/v1657564635/sample_ctunnp.jpg',
+      },
+    ],
+  }}
+/>
 
 <main>
   <img src={logo} alt="Svelte Logo" />
