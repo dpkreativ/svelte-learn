@@ -9,7 +9,7 @@
   openGraph={{
     url: 'link-to-hosted-site.com',
     title: 'Svelte Learn',
-    description: 'Learning how to use Svelte',
+    description: 'Learning how to use Svelte, omoh this thing don dey stress me out',
     images: [
       {
         url: 'https://res.cloudinary.com/dpkreativ/image/upload/v1657564635/sample_ctunnp.jpg',
